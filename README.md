@@ -2,8 +2,9 @@
 ` POST /new_patient`
 
 ```python
-{"name": str, "id": int, "age": int}
+{"name": str, "id": int, "blood_type": str}
 ```
+where blood type is one of O+, O-, A+, A-, B+, B-, AB+, AB-.
 
 
 `POST /add_test`
@@ -13,15 +14,3 @@
 ``` 
 
 `GET /get_results/<patient_id>`
-
-
-<!---
-### Database
-A list of dictionaries, with each dictionary as follows:
-```python
-{
- "name": str, "id": int, "age": int, 
- "tests": list of tupples of (test_name: str, test_result: int)
-}
-```
---->
